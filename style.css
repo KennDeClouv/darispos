@@ -1,0 +1,119 @@
+/* ----------------------------------------------
+ROOT SETTINGS
+-----------------------------------------------*/
+:root {
+    --main: #612D00;
+    --gradient: linear-gradient(-45deg, #00B5D0 3.87%, #5C0E62 110.68%);
+    --gradient1: linear-gradient(153deg, #00B5D0 3.87%, #5C0E62 110.68%);
+}
+
+/* ----------------------------------------------
+MAIN SETTINGS
+-----------------------------------------------*/
+main {
+    background: #FAF6F3;
+}
+
+/* ----------------------------------------------
+NAV SETTINGS
+-----------------------------------------------*/
+nav {
+    transition: all 0.4s ease;
+}
+
+/* ----------------------------------------------
+HOME SETTINGS
+-----------------------------------------------*/
+#home {
+    background: url(img/hero.svg) top;
+    height: 110vh;
+}
+
+#mobile {
+    background: url(img/backgroundphone.png) top;
+    height: 70vh;
+}
+
+
+
+/* ----------------------------------------------
+FITUR SETTINGS
+-----------------------------------------------*/
+h1 {
+    color: var(--main)
+}
+
+.bor {
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 5px !important;
+    padding: 16px !important;
+    background-color: #FFFFFF;
+    box-shadow: 7px 10px 50px 0px #E8E2F0;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+    position: relative;
+}
+
+.bor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+    width: 5px;
+    background: var(--gradient1);
+    border-radius: 0.25rem 0 0 0.25rem;
+    -webkit-border-radius: 0.25rem 0 0 0.25rem;
+    -moz-border-radius: 0.25rem 0 0 0.25rem;
+    -ms-border-radius: 0.25rem 0 0 0.25rem;
+    -o-border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.title {
+    position: absolute;
+}
+
+.title img {
+    position: absolute;
+    top: -30px;
+    left: -40px;
+}
+
+/* ----------------------------------------------
+RESPONSIVE SETTINGS
+-----------------------------------------------*/
+@media screen and (max-width:992px) {
+    .title {
+        position: static;
+    }
+
+    .title img {
+        position: absolute;
+    }
+
+}
+
+/* ----------------------------------------------
+HARGA SETTINGS
+-----------------------------------------------*/
+
+
+/* ----------------------------------------------
+TESTIMONI SETTINGS
+-----------------------------------------------*/
+.testi-desktop {
+    background: url(img/testimoni.png);
+    background-position: center;
+    background-size: cover;
+    height: 142vh;
+}
+
+.testimoni-mobile {
+    background: var(--gradient);
+}
+
+.testiBody {
+    display: none;
+}

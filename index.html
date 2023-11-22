@@ -1,0 +1,723 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daris Pos</title>
+
+    <!-- BOOTSTRAP CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- FONT AWESOME  CDN-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- AOS LIBRARY CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- LOCAL STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <!-- SWIPER JS CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg position-fixed w-100  bg-light fixed-top bg-transparent" style="height:9vh">
+            <div class="container-md px-4 ">
+                <a class="navbar-brand d-flex" href="#home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                        <circle cx="13.3333" cy="13.8665" r="13.3333" fill="#F2F2F2" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.343 5.84729C15.9979 6.23675 14.9666 8.6215 14.6461 9.77118C14.5638 10.0666 14.521 10.4058 14.551 10.5249C14.581 10.6441 14.9658 11.2284 15.406 11.8233C16.1779 12.8663 16.4513 13.3062 16.5746 13.7042C16.6229 13.8598 16.561 13.9354 16.2077 14.1519C15.5534 14.5527 14.3132 15.0171 12.1499 15.6715C11.0635 16 9.92462 16.3732 9.61905 16.5007L9.06328 16.7325L8.3747 18.1401C7.59316 19.7373 6.88281 21.488 6.88281 21.8169C6.88281 22.0247 6.9102 22.0384 7.32542 22.0384C7.93438 22.0384 8.81319 21.8461 10.2625 21.3956C13.349 20.4363 16.0039 19.2646 16.6785 18.5643C18.1931 16.9917 19.79 13.0792 19.786 10.9507C19.7852 10.4846 19.7265 10.2371 19.4881 9.69331C18.8097 8.14621 17.0295 5.69434 16.5847 5.69434C16.5263 5.69434 16.4175 5.76321 16.343 5.84729Z"
+                            fill="#612D00" />
+                    </svg>
+                    <h3 class="m-0 fw-semibold ms-2 text-light">Daris Pos</h3>
+                </a>
+                <div class="offcanvas offcanvas-end pe-5 bg-dark" id="offcanvasRight">
+                    <!-- OFFCANVAS HEADER -->
+                    <div class="offcanvas-header p-4">
+                        <a class="navbar-brand d-flex" href="#home">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28"
+                                fill="none">
+                                <circle cx="13.3333" cy="13.8665" r="13.3333" fill="#F2F2F2" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.343 5.84729C15.9979 6.23675 14.9666 8.6215 14.6461 9.77118C14.5638 10.0666 14.521 10.4058 14.551 10.5249C14.581 10.6441 14.9658 11.2284 15.406 11.8233C16.1779 12.8663 16.4513 13.3062 16.5746 13.7042C16.6229 13.8598 16.561 13.9354 16.2077 14.1519C15.5534 14.5527 14.3132 15.0171 12.1499 15.6715C11.0635 16 9.92462 16.3732 9.61905 16.5007L9.06328 16.7325L8.3747 18.1401C7.59316 19.7373 6.88281 21.488 6.88281 21.8169C6.88281 22.0247 6.9102 22.0384 7.32542 22.0384C7.93438 22.0384 8.81319 21.8461 10.2625 21.3956C13.349 20.4363 16.0039 19.2646 16.6785 18.5643C18.1931 16.9917 19.79 13.0792 19.786 10.9507C19.7852 10.4846 19.7265 10.2371 19.4881 9.69331C18.8097 8.14621 17.0295 5.69434 16.5847 5.69434C16.5263 5.69434 16.4175 5.76321 16.343 5.84729Z"
+                                    fill="#612D00" />
+                            </svg>
+                            <h3 class="m-0 fw-semibold ms-2 text-light">Daris Pos</h3>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="link d-flex text-end w-100 justify-content-center">
+                        <ul class="navbar-nav gap-3 d-flex fs-6 align-items-center w-100">
+                            <!-- NAVBAR LINKS -->
+
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link text-light" href="#produk">Produk</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link text-light" href="#layanan">Layanan</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link text-light" href="#harga">Harga</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link text-light" href="#hubungikami">Hubungi Kami</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link" href="masuk">
+                                    <div class="btn btn-danger rounded-pill">Masuk</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- NAVBAR END -->
+    <main>
+        <!-- HERO SECTION DESKTOP-->
+        <section id="home" class="d-none d-lg-block" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000"
+            data-aos-once="true">
+            <div class="container d-flex">
+                <div class="row my-auto w-100 mt-5 pt-5">
+                    <div class="col my-auto">
+                        <h2 class=" text-light fw-normal" data-aos="fade-right" data-aos-delay="500"
+                            data-aos-duration="1000" data-aos-once="true">Transaksi mudah lebih berkah,</h2>
+                        <h1 class="fw-bold text-light" data-aos="fade-right" data-aos-delay="600"
+                            data-aos-duration="1000" data-aos-once="true">BISNIS MAKIN SUKSES.</h1>
+                        <p class="text-light" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000"
+                            data-aos-once="true">Kelola bisnis jadi lebih hemat biaya, hemat <br>tenaga, dan hemat
+                            waktu.
+                        </p>
+                        <a href="">
+                            <div class="btn px-4 btn-danger" data-aos="fade-right" data-aos-delay="800"
+                                data-aos-duration="1000" data-aos-once="true">Pesan Sekarang</div>
+                        </a>
+                    </div>
+                    <div class="col-7" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <img src="img/heroitem.png" alt="" class="w-100 ps-5 ms-5">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HERO SECTION DESKTOP END-->
+        <!-- HERO SECTION MOBILE -->
+        <section id="mobile" class="d-flex d-lg-none" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000"
+            data-aos-once="true">
+            <div class="container d-flex">
+                <div class="my-auto w-100">
+                    <div class="my-auto">
+                        <h1 class="display-3 text-light fw-bold" data-aos="fade-right" data-aos-delay="500"
+                            data-aos-duration="1000" data-aos-once="true">Get Your
+                            Payment Faster</h1>
+                        <p class="text-light">Blinqpay helps businesses in Africa get paid by anyone, anywhere in the
+                            world
+                        </p>
+                        <div class="btn px-4 btn-info">Start Now</div>
+                        <div class="row mt-5 position-absolute">
+                            <div class="col">
+                                <img src="img/Group.svg" alt="" class="h-75">
+                            </div>
+                            <div class="col">
+                                <img src="img/avenger.svg" alt="" class="h-75">
+                            </div>
+                            <div class="col">
+                                <img src="img/etsy.svg" alt="" class="h-75">
+                            </div>
+                            <div class="col">
+                                <img src="img/in.svg" alt="" class="h-75">
+                            </div>
+                            <div class="col">
+                                <img src="img/tiktok.svg" alt="" class="h-75">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HERO SECTION MOBILE END -->
+
+        <!-- FITUR SECTION ONLY DESTOP-->
+        <section id="fitur" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7  mt-5 pt-5">
+                        <div class="row">
+                            <div class="col">
+                                <div class="bor py-1 mx-3 my-5">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-person fs-2 mb-3 text-danger"></i>
+                                        <h5 class="fw-bold text-dark-emphasis">Kasir Online</h5>
+                                        <p class="text-black-50">Tampilan menarik dan mudah digunakan untuk semua orang.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bor py-1 mx-3">
+                                    <div class="card-body">
+                                        <i class="fa-regular fa-chart-mixed fs-2 mb-3 text-danger"></i>
+                                        <h5 class="fw-bold text-dark-emphasis">Laporan Stok</h5>
+                                        <p class="text-black-50">Dapatkan laporan stok minimal yang selalu update.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="bor py-1 mx-3 mb-5">
+                                    <div class="card-body">
+                                        <i class="fa-regular fa-money-bills fs-2 mb-3 text-danger"></i>
+                                        <h5 class="fw-bold text-dark-emphasis">Kelola Keuangan</h5>
+                                        <p class="text-black-50">Laporan KAS harian, bulanan hingga tahunan.</p>
+                                    </div>
+                                </div>
+                                <div class="bor py-1 mx-3">
+                                    <div class="card-body">
+                                        <i class="fa-light fa-file-invoice fs-2  mb-3 text-danger"></i>
+                                        <h5 class="fw-bold text-dark-emphasis">Analisa bisnis</h5>
+                                        <p class="text-black-50">Dashboard informatif untuk memantau bisnis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ms-5 ps-5">
+                        <div class="title position-absolute">
+                            <img src="img/Subtract.svg" alt="" class="position-absolute z-n1">
+                            <h1 class="fw-bold">Fitur Lengkap</h1>
+                            <p class="fs-2 text-dark-emphasis">dan Live Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TRANSITION SHAPE -->
+            <div>
+                <img src="img/transition.png" alt="" class="w-100">
+            </div>
+            <div style="background: #FFFFFF;">
+                <div class="container">
+                    <div class="row text-center mx-5 px-5">
+                        <div class="col">
+                            <img src="img/landrover.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="img/avengers-desktop.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="img/etsy-desktop.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="img/linkedin-destop.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="img/tiktok-desktop.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FITUR SECTION ONLY DESTOP END-->
+    </main>
+    <!-- LAYANAN SECTION  -->
+    <section id="layanan" class=" py-5" style="background-color: #FFFFFF;">
+        <div class="container pt-5">
+            <!-- SHARE PAYMENT MOBILE ONLY -->
+
+            <div class="row pt-5 d-block d-lg-none">
+                <!-- IMAGE -->
+                <div class="col-12">
+                    <img src="img/heroitem.png" alt="" class="w-75 d-flex mx-auto">
+                </div>
+                <div class="col-12">
+                    <div class="mt-4 d-block d-lg-none">
+                        <div class="title">
+                            <img src="img/Subtract1.svg" alt="" class=" z-n1">
+                            <h1 class="fw-bold text-dark"><span class="opacity-75">Make And Share </span><span
+                                    style="color: #5C0E62;">Payment </span><span class="opacity-75">With Community</h1>
+                            <p class="text-dark-emphasis fw-semibold opacity-75">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Aperiam sequi quod velit asperiores.</p>
+                            <a href="#" class="nav-link mt-3 fw-semibold">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SHARE PAYMENT MOBILE ONLY END-->
+
+            <!-- TERMURAH DI KELASNYA -->
+            <div class="row pt-5">
+                <div class="col-12 col-lg-6 d-flex mt-lg-5 pt-lg-5  order-1 order-lg-0">
+                    <!-- DESKTOP -->
+                    <div class="ms-0 ps-0 ms-lg-5 ps-lg-5 d-none d-lg-block">
+                        <div class="title">
+                            <img src="img/Subtract1.svg" alt="" class=" z-n1">
+                            <p class="m-0 text-danger">HARGA</p>
+                            <h1 class="fw-bold m-0">Termurah</h1>
+                            <p class="fs-1 text-dark-emphasis">di kelasnya</p>
+                        </div>
+                    </div>
+                    <!-- MOBILE -->
+                    <div class="ms-0 ps-0 ms-lg-5 ps-lg-5 d-block d-lg-none">
+                        <div class="title">
+                            <img src="img/Subtract1.svg" alt="" class=" z-n1">
+                            <p class="m-0 text-danger fw-bold">CREDIT CARD</p>
+                            <h1 class="fw-bold text-dark"><span class="opacity-75">Payment </span><span
+                                    style="color: #5C0E62;">Gets Easier </span></h1>
+                            <p class="text-dark-emphasis fw-semibold opacity-75">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Aperiam sequi quod velit asperiores.</p>
+                            <a href="#" class="nav-link mt-3 fw-semibold">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- IMAGE -->
+                <div class="col-12 col-lg-6 ">
+                    <img src="img/termurah.png" alt="" class="w-100">
+                </div>
+            </div>
+            <!-- TERMURAH DI KELASNYA END-->
+
+            <!--  PELAYANAN PRIMA-->
+            <div class="row pt-5">
+                <!-- IMAGE -->
+                <div class="col-12 col-lg-6">
+                    <img src="img/prima.png" alt="" class="w-100">
+                </div>
+                <!-- DESKTOP -->
+                <div class="col d-flex mt-5 pt-lg-5 ms-lg-5 d-none d-lg-block">
+                    <div class="col-12 col-lg-6 mt-0 pt-0 mt-lg-5 pt-lg-5">
+                        <div class="title ">
+                            <img src="img/Subtract1.svg" alt="" class=" z-n1">
+                            <p class="m-0 text-danger">PELAYANAN</p>
+                            <h1 class="fw-bold m-0">Prima</h1>
+                            <p class="fs-1 text-dark-emphasis">24 / 7</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- MOBILE -->
+                <div class="col d-flex mt-5 pt-lg-5 ms-lg-5 b-block d-lg-none">
+                    <div class="col-12 col-lg-6 mt-0 pt-0 mt-lg-5 pt-lg-5">
+                        <div class="title ">
+                            <img src="img/Subtract1.svg" alt="" class=" z-n1">
+                            <p class="m-0 text-danger fw-bold">MOBILE TRANSACTION</p>
+                            <h1 class="fw-bold text-dark"><span class="opacity-75">Smart Mobile </span><span
+                                    style="color: #5C0E62;">Banking</span></h1>
+                            <p class="text-dark-emphasis opacity-75 fw-semibold">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sit quisquam corporis deserunt temporibus.</p>
+                            <a href="#" class="nav-link mt-3 fw-semibold">Learn more</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  PELAYANAN PRIMA END-->
+        <!-- FITUR LENGKAP -->
+        <div class="row pt-5">
+            <div class="col-12 col-lg-6 d-flex mt-5 pt-lg-5 ms-3 ms-lg-5 order-1 order-lg-0">
+                <!-- DESKTOP -->
+                <div class="col ms-lg-5 ps-lg-5 d-none d-lg-block">
+                    <div class="title ms-lg-5 ps-lg-5">
+                        <img src="img/Subtract1.svg" alt="" class=" z-n1">
+                        <p class="m-0 text-danger">FITUR</p>
+                        <h1 class="fw-bold m-0">Lengkap</h1>
+                        <p class="fs-1 text-dark-emphasis">Ramah Pengguna</p>
+                    </div>
+                </div>
+                <!-- MOBILE -->
+                <div class="col d-block d-lg-none">
+                    <div class="title">
+                        <img src="img/Subtract1.svg" alt="" class=" z-n1">
+                        <p class="m-0 text-danger fw-bold">SECURE TRANSACTION</p>
+                        <h1 class="fw-bold text-dark "> <span class="opacity-75">Safe Your </span><span
+                                style="color: #5C0E62;">Savings</span></h1>
+                        <p class="text-dark-emphasis fw-semibold opacity-75">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptas excepturi id ea veritatis?</p>
+                        <a href="#" class="nav-link mt-3 fw-semibold">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 ms-auto">
+                <img src="img/lengkap.png" alt="" class="w-100">
+            </div>
+        </div>
+        <!-- FITUR LENGKAP END-->
+    </section>
+    <!-- LAYANAN SECTION END-->
+
+    <!-- HARGA SECTION -->
+    <section id="harga" class="pt-5 d-none d-lg-block" style="background-color: #FFFFFF;">
+        <div class="container mt-5">
+            <!-- PAKET HARGA -->
+            <div class="row text-center">
+                <!-- PAKET REGULER -->
+                <div class="col">
+                    <div class="card mx-4 shadow-lg">
+                        <div class="card-header bg-dark text-light fst-italic">
+                            <h2 class="">Paket</h2>
+                            <h1 class="text-light">Reguler</h1>
+                        </div>
+                        <div class="card-body my-3">
+                            <p class="text-decoration-line-through fs-4 fst-italic"
+                                style="text-decoration-color: red !important;"><b>Rp. 600.000 /</b> 3 Bulan</p>
+                            <h1 class="card-text fst-italic">Rp.450.000 <br> / 3 Bulan</h1>
+                            <div>
+                                <i class="fa-solid fa-fire-flame-curved fs-1 text-danger my-4"></i>
+                            </div>
+                            <a href="#" class="btn btn-dark rounded-pill mx-4 px-4">Ambil PROMONYA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PAKET PREMIUM -->
+                <div class="col">
+                    <div class="card mx-4 shadow-lg">
+                        <div class="card-header bg-danger text-light fst-italic">
+                            <h2 class="">Paket</h2>
+                            <h1 class="text-light">Premium</h1>
+                        </div>
+                        <div class="card-body  my-3">
+                            <p class="text-decoration-line-through fs-4 fst-italic"
+                                style="text-decoration-color: red !important;"><b>Rp. 1.100.000 /</b> 6 Bulan</p>
+                            <h1 class="card-text fst-italic  text-danger">Rp.600.000 <br> / 6 Bulan</h1>
+                            <div>
+                                <i class="fa-solid fa-fire-flame-curved fs-1 text-danger my-4"></i>
+                                <i class="fa-solid fa-fire-flame-curved fs-1 text-danger my-4"></i>
+                            </div>
+                            <a href="#" class="btn btn-danger rounded-pill mx-4 px-4">Ambil PROMONYA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PAKET PERTAMAX -->
+                <div class="col">
+                    <div class="card mx-4 shadow-lg">
+                        <div class="card-header bg-info text-light fst-italic">
+                            <h2 class="">Paket</h2>
+                            <h1 class="text-light">Pertamax</h1>
+                        </div>
+                        <div class="card-body my-3">
+                            <p class="text-decoration-line-through fs-4 fst-italic"
+                                style="text-decoration-color: red !important;"><b>Rp. 2.400.000 /</b> 12 Bulan</p>
+                            <h1 class="card-text fst-italic text-info">Rp.1.000.000 <br> / 12 Bulan</h1>
+                            <div>
+                                <i class="fa-solid fa-fire-flame-curved fs-1 text-danger my-4"></i>
+                                <i class="fa-solid fa-fire-flame-curved fs-1 text-danger my-4"></i>
+                                <i class="fa-solid fa-fire-flame-curved fs-1 text-danger my-4"></i>
+                            </div>
+                            <a href="#" class="btn btn-info rounded-pill mx-4 px-4 text-light">Ambil PROMONYA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HARGA SECTION END-->
+    <!-- TESTIMONI DESKTOP -->
+    <section id="testimoni" class="testi-desktop d-none d-lg-block">
+        <div class="container d-flex align-items-center h-100">
+            <div class="row h-100 w-100 align-items-center">
+                <!-- TESTIMONI TITLE -->
+                <div class="col-5">
+                    <p class="fs-1 text-light ms-5 mt-5">Bagaimana kata <br><span class="h1">Mereka?</span></p>
+                </div>
+                <!-- TESTIMONI  -->
+                <div class="col">
+                    <!-- LEO MAYNUS -->
+                    <div id="testiBody1" class="testiBody d-flex">
+                        <div class="text-center px-4 mt-5">
+                            <img src="img/Group 22.png" alt="" class="w-50">
+                            <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora
+                                incidunt
+                                tenetur delectus velit esse et. Lorem ipsum dolor sit.
+                            </p>
+                            <h1 class="fw-bolder text-warning">LEO MAYNUS</h1>
+                            <h6 class="fw-bold text-warning">CEO at Softpanda</h6>
+                        </div>
+                    </div>
+                    <!-- LEO MAYNUS -->
+                    <div id="testiBody2" class="testiBody">
+                        <div class="text-center px-4 mt-5">
+                            <img src="img/Group 23.png" alt="" class="w-50">
+                            <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                                voluptatem, distinctio esse ut nobis illo quos..
+                            </p>
+                            <h1 class="fw-bolder text-warning">MARIA </h1>
+                            <h6 class="fw-bold text-warning">CEO at Softpanda</h6>
+                        </div>
+                    </div>
+                    <!-- LEO MAYNUS -->
+                    <div id="testiBody3" class="testiBody">
+                        <div class="text-center px-4 mt-5">
+                            <img src="img/Group 24.png" alt="" class="w-50">
+                            <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                                voluptatibus dolorem ipsam! Quibusdam soluta aut deleniti exercitationem.
+                            </p>
+                            <h1 class="fw-bolder text-warning">JONATHAN</h1>
+                            <h6 class="fw-bold text-warning">CEO at Woilah inc.</h6>
+                        </div>
+                    </div>
+                    <!-- LEO MAYNUS -->
+                    <div id="testiBody4" class="testiBody">
+                        <div class="text-center px-4 mt-5">
+                            <img src="img/Group 25.png" alt="" class="w-50">
+                            <p class="fw-bold text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Accusantium, totam repellendus ad omnis perspiciatis earum sapiente ipsa eos.
+                            </p>
+                            <h1 class="fw-bolder text-warning">MAYDEN</h1>
+                            <h6 class="fw-bold text-warning">CEO at Soybeen</h6>
+                        </div>
+                    </div>
+                    <!-- LEO MAYNUS -->
+                    <div id="testiBody5" class="testiBody">
+                        <div class="text-center px-4 mt-5">
+                            <img src="img/Group 26.png" alt="" class="w-50">
+                            <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                asperiores iste ut, eligendi dolorum consectetur laudantium repudiandae! Ea.
+                            </p>
+                            <h1 class="fw-bolder text-warning">ASYLEY</h1>
+                            <h6 class="fw-bold text-warning">CEO at SoftPancake</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- TESTIMONI BUTTON -->
+                <div class="col-2 pt-5">
+                    <div class="d-flex justify-content-end " id="testiButton1">
+                        <img src="img/Group 22.png" alt="" class="w-75" style="cursor: pointer;">
+                    </div>
+                    <div class="d-flex justify-content-end" id="testiButton2">
+                        <img src="img/Group 23.png" alt="" class="w-75 px-1" style="cursor: pointer;">
+                    </div>
+                    <div class="d-flex justify-content-end" id="testiButton3">
+                        <img src="img/Group 24.png" alt="" class="w-75 px-2" style="cursor: pointer;">
+                    </div>
+                    <div class="d-flex justify-content-end" id="testiButton4">
+                        <img src="img/Group 25.png" alt="" class="w-75 px-3" style="cursor: pointer;">
+                    </div>
+                    <div class="d-flex justify-content-end" id="testiButton5">
+                        <img src="img/Group 26.png" alt="" class="w-75 px-4" style="cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONI DESKTOP END-->
+
+    <!-- TESTIMONI MOBILE -->
+    <section id="testimoni" class="d-block d-lg-none testimoni-mobile">
+        <div class="container text-center py-5">
+            <h1 class="fw-bold text-light">What our <span style="color: #5C0E62;">Customer </span><br>are Saying</h1>
+            <div class="swiper mySwiper2 mt-5">
+                <div class="swiper-wrapper">
+                    <!-- LEO MAYNUS-->
+                    <div class="swiper-slide text-center">
+                        <img src="img/Group 22.png" alt="" class="w-50">
+                        <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                            incidunt
+                            tenetur delectus velit esse et. Lorem ipsum dolor sit.
+                        </p>
+                        <h1 class="fw-bolder text-warning">LEO MAYNUS</h1>
+                        <h6 class="fw-bold text-warning">CEO at Softpanda</h6>
+                    </div>
+                    <!-- LEO MAYNUS-->
+                    <div class="swiper-slide text-center">
+                        <img src="img/Group 23.png" alt="" class="w-50">
+                        <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                            incidunt
+                            tenetur delectus velit esse et. Lorem ipsum dolor sit.
+                        </p>
+                        <h1 class="fw-bolder text-warning">LEO MAYNUS</h1>
+                        <h6 class="fw-bold text-warning">CEO at Softpanda</h6>
+                    </div>
+                    <!-- LEO MAYNUS-->
+                    <div class="swiper-slide text-center">
+                        <img src="img/Group 24.png" alt="" class="w-50">
+                        <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                            incidunt
+                            tenetur delectus velit esse et. Lorem ipsum dolor sit.
+                        </p>
+                        <h1 class="fw-bolder text-warning">LEO MAYNUS</h1>
+                        <h6 class="fw-bold text-warning">CEO at Softpanda</h6>
+                    </div>
+                    <!-- LEO MAYNUS-->
+                    <div class="swiper-slide text-center">
+                        <img src="img/Group 25.png" alt="" class="w-50">
+                        <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                            incidunt
+                            tenetur delectus velit esse et. Lorem ipsum dolor sit.
+                        </p>
+                        <h1 class="fw-bolder text-warning">LEO MAYNUS</h1>
+                        <h6 class="fw-bold text-warning">CEO at Softpanda</h6>
+                    </div>
+                    <!-- LEO MAYNUS-->
+                    <div class="swiper-slide text-center">
+                        <img src="img/Group 26.png" alt="" class="w-50">
+                        <p class="fw-bold text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                            incidunt
+                            tenetur delectus velit esse et. Lorem ipsum dolor sit.
+                        </p>
+                        <h1 class="fw-bolder text-warning">LEO MAYNUS</h1>
+                        <h6 class="fw-bold text-warning">CEO at Softpanda</h6>
+                    </div>
+                </div>
+                <div class="swiper-pagination" style="--swiper-theme-color: white"></div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONI MOBILE END-->
+
+    <!-- FOOTER DESKTOP -->
+    <footer class="d-none d-lg-block" style="background-color: #210933;">
+        <div class="card w-75 mx-auto py-4 shadow-lg" style="position: relative; top: -50px;">
+            <div class="container"></div>
+            <div class="card-body px-5">
+                <div class="container px-5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="img/Subtract1.svg" alt="" class="position-absolute" style="left: 50px;top: 10px;">
+                        <p class="fs-2 text-dark-emphasis fw-medium"><span class="opacity-75">Masih Tunggu </span><span
+                                style="color: #5C0E62;">Apa Lagi ?</span></p>
+                        <a href="/">
+                            <div class="btn btn-danger shadow-lg"> Hubungi admin</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container p-5 d-flex justify-content-between">
+            <!-- FOOTER BRANDS -->
+            <a class="navbar-brand d-flex" href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                    <circle cx="13.3333" cy="13.8665" r="13.3333" fill="#F2F2F2" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.343 5.84729C15.9979 6.23675 14.9666 8.6215 14.6461 9.77118C14.5638 10.0666 14.521 10.4058 14.551 10.5249C14.581 10.6441 14.9658 11.2284 15.406 11.8233C16.1779 12.8663 16.4513 13.3062 16.5746 13.7042C16.6229 13.8598 16.561 13.9354 16.2077 14.1519C15.5534 14.5527 14.3132 15.0171 12.1499 15.6715C11.0635 16 9.92462 16.3732 9.61905 16.5007L9.06328 16.7325L8.3747 18.1401C7.59316 19.7373 6.88281 21.488 6.88281 21.8169C6.88281 22.0247 6.9102 22.0384 7.32542 22.0384C7.93438 22.0384 8.81319 21.8461 10.2625 21.3956C13.349 20.4363 16.0039 19.2646 16.6785 18.5643C18.1931 16.9917 19.79 13.0792 19.786 10.9507C19.7852 10.4846 19.7265 10.2371 19.4881 9.69331C18.8097 8.14621 17.0295 5.69434 16.5847 5.69434C16.5263 5.69434 16.4175 5.76321 16.343 5.84729Z"
+                        fill="#612D00" />
+                </svg>
+                <h3 class="m-0 fw-semibold ms-2 text-light">Daris Pos</h3>
+            </a>
+            <h6 class="text-light">
+                Developed 2023 © <a href="https://syababstudio.id" class="link-danger">Syabab Studio</a>
+            </h6>
+        </div>
+    </footer>
+    <!-- FOOTER DESKTOP END-->
+
+    <!-- FOOTER MOBILE  -->
+    <footer class="d-block d-lg-none" style="background-color: #210933;">
+        <div class="container text-center py-5">
+            <img src="img/blinqpay.png" alt="" class="w-50">
+            <div class="text-light mt-5 ">
+                <!-- SERVICES -->
+                <h4 class="">Services</h4>
+                <div class="opacity-75 gap-4 d-flex flex-column mt-5 fw-semibold">
+                    <a href="/" class="nav-link">Design</a>
+                    <a href="/" class="nav-link">Coding</a>
+                    <a href="/" class="nav-link">Develpment</a>
+                    <a href="/" class="nav-link">Marketing</a>
+                    <a href="/" class="nav-link">Digital Marketing</a>
+                    <a href="/" class="nav-link">Product Design</a>
+                </div>
+                <!-- PRODUCT -->
+                <h4 class="mt-5 pt-5">Product</h4>
+                <div class="opacity-75 gap-4 d-flex flex-column mt-5 fw-semibold">
+                    <a href="/" class="nav-link">Hotel Management</a>
+                    <a href="/" class="nav-link">Rent Management</a>
+                    <a href="/" class="nav-link">Micro-Finance</a>
+                    <a href="/" class="nav-link">Industry</a>
+                    <a href="/" class="nav-link">Product Design</a>
+                </div>
+                <!-- COMPANY -->
+                <h4 class="mt-5 pt-5">Company</h4>
+                <div class="opacity-75 gap-4 d-flex flex-column mt-5 fw-semibold">
+                    <a href="/" class="nav-link">Las Vegas</a>
+                    <a href="/" class="nav-link">New York</a>
+                    <a href="/" class="nav-link">Tokyo</a>
+                    <a href="/" class="nav-link">Paris</a>
+                </div>
+            </div>
+            <div class="row w-50 mx-auto mt-5">
+                <div class="col">
+                    <a href="https://instagram.com"
+                        class="nav-link fa-3x fa-brands fa-instagram text-light opacity-50"></a>
+                </div>
+                <div class="col">
+                    <a href="https://instagram.com"
+                        class="nav-link fa-3x fa-brands fa-twitter text-light opacity-50"></a>
+                </div>
+                <div class="col">
+                    <a href="https://instagram.com"
+                        class="nav-link fa-3x fa-brands fa-linkedin-in text-light opacity-50"></a>
+                </div>
+            </div>
+            <div class="row">
+                <p class="text-light opacity-50 mt-3">
+                    ©️ Copy Right 2021. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER MOBILE  END-->
+    <!-- BOOTSTRAP JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- AOS LIBRARY JS CDN-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module">
+        AOS.init();
+
+        // Transparent nav
+        document.addEventListener('DOMContentLoaded', function () {
+            window.addEventListener('scroll', function () {
+                var gap = 0;
+                if (window.pageYOffset > gap) {
+                    document.querySelector('nav').classList.remove('bg-transparent');
+                    document.querySelector('nav').classList.add('bg-dark');
+                } else {
+                    document.querySelector('nav').classList.add('bg-transparent');
+                    document.querySelector('nav').classList.remove('bg-dark');
+                }
+            });
+        });
+
+        // Swiper JS
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // TESTIMONI
+        const buttonCount = 5;
+
+        for (let i = 1; i <= buttonCount; i++) {
+            const button = document.querySelector(`#testiButton${i}`);
+            const body = document.querySelector(`#testiBody${i}`);
+
+            button.addEventListener('click', () => {
+                for (let j = 1; j <= buttonCount; j++) {
+                    const otherBody = document.querySelector(`#testiBody${j}`);
+                    otherBody.classList.toggle('d-flex', i === j);
+                }
+            });
+        }
+        console.log(testiButton1, testiButton2, testiButton3, testiBody1)
+    </script>
+</body>
+<!-- Instagram : @l.luzz.z -->
+
+</html>
